@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_margin="8dp"
+                                    app:cardBackgroundColor="#ff0000"
+                                    android:layout_height="260dp">
+
+    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+
+        <ImageView
+                android:id="@+id/movieImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                tools:text="Tokyo Ghoul"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="#88000000"
+                app:layout_constraintEnd_toEndOf="@+id/movieImageView"
+                app:layout_constraintStart_toStartOf="@+id/movieImageView"
+                app:layout_constraintBottom_toBottomOf="@+id/movieImageView"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
